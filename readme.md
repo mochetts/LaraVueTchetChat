@@ -18,13 +18,13 @@ This repo also showcases how to do the whole cicle for social authentication wit
 
 ## Setup guide
 	
-	1) Clone repo
-	2) Standing on repo folder, run "composer install" from a terminal (note that composer is needed got to [Composer Website](https://getcomposer.org/) to get more info on how to install it)
-	3) Standing on repo folder, run "composer update" from a terminal
-	4) If you want to test facebook login with your own app, go to config/services.php and change the facebook credentials and use your own.
-	5) On a terminal run command "php artisan chat:serve" to start the chat server (on port 8080)
-	6) You'r done!
-	
+1) Clone repo
+2) Standing on repo folder, run "composer install" from a terminal (note that composer is needed got to [Composer Website](https://getcomposer.org/) to get more info on how to install it)
+3) Standing on repo folder, run "composer update" from a terminal
+4) If you want to test facebook login with your own app, go to config/services.php and change the facebook credentials and use your own.
+5) On a terminal run command "php artisan chat:serve" to start the chat server (on port 8080)
+6) You'r done!
+
 ## Contributing
 
 Thank you for considering contributing to this repository! Any contribution is welcomed always having the "spread the knowledge" in mind. 
