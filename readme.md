@@ -16,27 +16,35 @@ The idea is to integrate Ratchet web sockets with a Laravel 5 simple application
 
 This repo also showcases how to do the whole cicle for social authentication with laravel 5 (which is kind of a neat feature). I only used facebook login as example, but it's quite easy to add new authentication methods.
 
+## Requirements
+
+1) [Composer](https://getcomposer.org/)
+
+2) Database server (I use mysql)
+
 ## Setup guide
 	
 1) Clone repo
 
-2) Standing on repo folder, run "composer install" from a terminal (note that composer is needed got to [Composer Website](https://getcomposer.org/) to get more info on how to install it)
+2) Standing on repo folder, run "composer install" from a terminal.
 
 3) Standing on repo folder, run "composer update" from a terminal
 
 4) If you want to test facebook login with your own app, go to config/services.php and change the facebook credentials and use your own.
 
-5) Add a virtual host with ServerName "chat.dev" (or use whatever server name you like)
+5) Add a virtual host with ServerName "chat.dev" (or use whatever server name you like). This steps has more steps within, so please search on google how to add a virtual host.
 
-6) Rename .env.example file (located at root structure) to be .env only and update your database credentials.
+6) On a terminal console navigate to project root run command "chmod -R 777 storage" 
 
-6) On a terminal console run command "php artisan migrate:install"
+7) Rename .env.example file (located at root structure) to be .env only and update your database credentials. (Note that a database server is needed to run this app)
 
-7) On a terminal console run command "php artisan migrate"
+8) On a terminal console navigate to project root run command "php artisan migrate:install"
 
-8) On a terminal console run command "php artisan chat:serve" to start the chat server (localhost on port 8080)
+9) On a terminal console navigate to project root run command "php artisan migrate"
 
-9) Whohaa! You'r done! Open browser and enter url http://chat.dev and start chatting!
+10) On a terminal console navigate to project root run command "php artisan chat:serve" to start the chat server (localhost on port 8080)
+
+11) Whohaa! You'r done! Open browser and enter url http://chat.dev, login and start chatting!
 
 ## Contributing
 
