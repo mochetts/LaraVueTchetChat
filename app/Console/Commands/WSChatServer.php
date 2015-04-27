@@ -47,12 +47,13 @@ class WSChatServer extends Command {
 		$this->info("Starting chat web socket server on port " . $port);
 		
 		$server = IoServer::factory(
-        new HttpServer(
+        	new HttpServer(
 	            new WsServer(
 	                new Chat()
 	            )
 	        ),
-	        $port
+	        $port,
+	        '127.0.0.1'
 	    );
 
 	    $server->run();
