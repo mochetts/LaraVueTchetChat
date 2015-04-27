@@ -1,27 +1,36 @@
-## Laravel PHP Framework
+## LaravelRatchet Chat
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+"Laravel is a web application framework with expressive, elegant syntax... Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching."
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
-
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+"Ratchet is a loosely coupled PHP library providing developers with tools to create real time, bi-directional applications between clients and servers over WebSockets. This is not your Grandfather's Internet."
 
 ## Official Documentation
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+Documentation for Laravel 5 can be found on the [Laravel website](http://laravel.com/docs).
 
+Documentation for ratchet can be found on the [Ratchet website](http://socketo.me/docs/).
+
+## Description
+
+The idea is to integrate Ratchet web sockets with a Laravel 5 simple application and implement a chat that uses web sockets.
+
+This repo also showcases how to do the whole cicle for social authentication with laravel 5 (which is kind of a neat feature). I only used facebook login as example, but it's quite easy to add new authentication methods.
+
+## Setup guide
+	
+	1) Clone repo
+	2) Standing on repo folder, run "composer install" from a terminal (note that composer is needed got to [Composer Website](https://getcomposer.org/) to get more info on how to install it)
+	3) Standing on repo folder, run "composer update" from a terminal
+	4) If you want to test facebook login with your own app, go to config/services.php and change the facebook credentials and use your own.
+	5) On a terminal run command "php artisan chat:serve" to start the chat server (on port 8080)
+	6) You'r done!
+	
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Thank you for considering contributing to this repository! Any contribution is welcomed always having the "spread the knowledge" in mind. 
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Eveloution comes after sharing knowledge.
 
 ### License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The code under this repository is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
