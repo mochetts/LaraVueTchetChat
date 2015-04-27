@@ -26,9 +26,17 @@ This repo also showcases how to do the whole cicle for social authentication wit
 
 4) If you want to test facebook login with your own app, go to config/services.php and change the facebook credentials and use your own.
 
-5) On a terminal run command "php artisan chat:serve" to start the chat server (on port 8080)
+5) Add a virtual host with ServerName "chat.dev" (or use whatever server name you like)
 
-6) You'r done!
+6) Rename .env.example file (located at root structure) to be .env only and update your database credentials.
+
+6) On a terminal console run command "php artisan migrate:install"
+
+7) On a terminal console run command "php artisan migrate"
+
+8) On a terminal console run command "php artisan chat:serve" to start the chat server (localhost on port 8080)
+
+9) Whohaa! You'r done! Open browser and enter url http://chat.dev and start chatting!
 
 ## Contributing
 
