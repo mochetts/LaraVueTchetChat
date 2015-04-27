@@ -49,7 +49,7 @@ class WSChatServer extends Command {
 		$server = IoServer::factory(
         	new Chat(),
 	        $port,
-	        '127.0.0.1'
+	        '0.0.0.0'
 	    );
 
 	    $server->run();
