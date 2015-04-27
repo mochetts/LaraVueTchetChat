@@ -29,8 +29,9 @@
 
 	var userName = "<?= Auth::user()->name ?>";
 	var port = "<?= $chatPort ?>";
+	var uri = "<?= str_replace('http://', '', str_replace('https://', '', App::make('url')->to('/'))); ?>";
 	port = port.length == 0 ? '8080' : port;
-	
+
 	function addMessageToChatBox(message)
 	{
 		$("#chatMessages").append('<li>'+message+'</li>');
@@ -38,7 +39,7 @@
 
 	$(document).ready(function(){
 
-		var conn = new WebSocket('ws://localhost:'+port);
+		var conn = new WebSocket('ws://'+uri+':'+port);
 		
 		conn.onclose = function (event) {
 	        var reason;
