@@ -50,7 +50,7 @@ This repo also showcases how to do the whole cicle for social authentication wit
 
 Thank you for considering contributing to this repository! Any contribution is welcomed always having the "spread the knowledge" in mind. 
 
-Eveloution comes after sharing knowledge.
+Evolution comes after sharing knowledge.
 
 ### License
 
