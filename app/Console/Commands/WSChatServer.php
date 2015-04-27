@@ -47,7 +47,11 @@ class WSChatServer extends Command {
 		$this->info("Starting chat web socket server on port " . $port);
 		
 		$server = IoServer::factory(
-        	new Chat(),
+        	new HttpServer(
+	            new WsServer(
+	                new Chat()
+	            )
+	        ),
 	        $port,
 	        '0.0.0.0'
 	    );
@@ -74,7 +78,7 @@ class WSChatServer extends Command {
 	protected function getOptions()
 	{
 		return [
-			['port', 'p', InputOption::VALUE_OPTIONAL, 'Port where to launch the server.', 8080],
+			['port', 'p', InputOption::VALUE_OPTIONAL, 'Port where to launch the server.', 9090],
 		];
 	}
 

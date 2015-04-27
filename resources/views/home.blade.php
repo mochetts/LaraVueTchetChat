@@ -30,7 +30,7 @@
 	var userName = "<?= Auth::user()->name ?>";
 	var port = "<?= $chatPort ?>";
 	var uri = "<?= str_replace('http://', '', str_replace('https://', '', App::make('url')->to('/'))); ?>";
-	port = port.length == 0 ? '8080' : port;
+	port = port.length == 0 ? '9090' : port;
 
 	function addMessageToChatBox(message)
 	{

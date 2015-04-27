@@ -31,7 +31,7 @@ class HomeController extends Controller {
 	public function index()
 	{
 		$chatPort = \Request::input("p");
-		$chatPort = $chatPort ?: 8989;
+		$chatPort = $chatPort ?: 9090;
 		return view('home', compact("chatPort"));
 	}
 
