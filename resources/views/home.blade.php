@@ -29,7 +29,7 @@
 
 	var userName = "<?= Auth::user()->name ?>";
 	var port = "<?= $chatPort ?>";
-	var uri = "<?= str_replace('http://', '', str_replace('https://', '', App::make('url')->to('/'))); ?>";
+	var uri = "<?= explode(':', str_replace('http://', '', str_replace('https://', '', App::make('url')->to('/'))))[0]; ?>";
 	port = port.length == 0 ? '9090' : port;
 
 	function addMessageToChatBox(message)
@@ -40,10 +40,10 @@
 	$(document).ready(function(){
 
 		var conn = new WebSocket('ws://'+uri+':'+port);
-		
+
 		conn.onclose = function (event) {
 	        var reason;
-	       	        
+
 	        if (event.code == 1000)
 	            reason = "Normal closure, meaning that the purpose for which the connection was established has been fulfilled.";
 	        else if(event.code == 1001)
@@ -76,12 +76,12 @@
 	       addMessageToChatBox("Connection closed: " + reason);
 	    };
 
-		conn.onopen = function(e) 
+		conn.onopen = function(e)
 		{
 		    addMessageToChatBox("Connection established!");
 		};
 
-		conn.onmessage = function(e) 
+		conn.onmessage = function(e)
 		{
 		    addMessageToChatBox(e.data);
 		};
