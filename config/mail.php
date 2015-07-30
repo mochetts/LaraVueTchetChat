@@ -54,7 +54,7 @@ return [
 	|
 	*/
 
-	'from' => ['address' => null, 'name' => null],
+	'from' => ['address' => 'showcase@design-it.de', 'name' => '.design-it GmbH'],
 
 	/*
 	|--------------------------------------------------------------------------
