@@ -44,7 +44,7 @@ This repo also showcases how to do the whole cicle for social authentication wit
 
 10) On a terminal console navigate to project root run command "php artisan chat:serve" to start the chat server (localhost on port 9090)
 
-11) Whohaa! You'r done! Open browser and enter url http://chat.dev, login and start chatting!
+11) Whohaa! You'r done! Open browser and enter url http://chat.dev, login and happy chatting!
 
 ## Contributing
 
@@ -55,3 +55,8 @@ Evolution comes after sharing knowledge.
 ### License
 
 The code under this repository is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+### Demo
+http://chat.designitgmbh.de/
+
+Thanks!
