@@ -42,7 +42,7 @@ This repo also showcases how to do the whole cicle for social authentication wit
 
 9) On a terminal console navigate to project root run command "php artisan migrate"
 
-10) On a terminal console navigate to project root run command "php artisan chat:serve" to start the chat server (localhost on port 8080)
+10) On a terminal console navigate to project root run command "php artisan chat:serve" to start the chat server (localhost on port 9090)
 
 11) Whohaa! You'r done! Open browser and enter url http://chat.dev, login and start chatting!
 
