@@ -2,7 +2,7 @@
 
 @section('content')
 <style>
- 	#chatMessages{ width: 100%; border: 1px solid #ddd; min-height: 100px; list-style: none; padding-left: 0px; max-height: 400px; overflow-y: auto;}
+ 	#chatMessages{ width: 100%; border: 1px solid #ddd; min-height: 100px; list-style: none; padding-left: 0px; height: 400px; overflow-y: auto;}
  	#chatMessages li { width: 100%; padding: 10px;}
 </style>
 
