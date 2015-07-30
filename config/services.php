@@ -36,8 +36,8 @@ return [
 	],
 
 	'facebook' => [
-	    'client_id' => '834421569927176',
-	    'client_secret' => '3f8d030dca4ebe4d1d6b62478bc153d2',
+	    'client_id' => '854582727956594',
+	    'client_secret' => '6f0d383b67a0b88897621cc559b91024',
 	    'redirect' => 'http://chat.designitgmbh.de/auth/facebook-callback',
 	],
 
