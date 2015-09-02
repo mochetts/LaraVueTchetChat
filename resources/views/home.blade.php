@@ -27,9 +27,9 @@
 
 <script>
 
-	var userName = "<?= Auth::user()->name ?>";
-	var port = "<?= $chatPort ?>";
-	var uri = "<?= explode(':', str_replace('http://', '', str_replace('https://', '', App::make('url')->to('/'))))[0]; ?>";
+	var userName = "{{ Auth::user()->name }}";
+	var port = "{{ $chatPort }}";
+	var uri = "{{ explode(':', str_replace('http://', '', str_replace('https://', '', App::make('url')->to('/'))))[0] }}";
 	port = port.length == 0 ? '9090' : port;
 
 	function addMessageToChatBox(message)
