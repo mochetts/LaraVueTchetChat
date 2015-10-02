@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration {
            $table->boolean('active');
            $table->string('avatar');
            $table->string('provider');
-           $table->string('provider_id')->unique();
+           $table->string('provider_id');
            $table->string('username')->nullable();
 		   $table->rememberToken();
 		   $table->timestamps();
