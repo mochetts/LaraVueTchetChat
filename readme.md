@@ -12,7 +12,7 @@ Documentation for Laravel 5 can be found on the [Laravel website](http://laravel
 
 Documentation for ratchet can be found on the [Ratchet website](http://socketo.me/docs/).
 
-Documentation for ratchet can be found on the [Ratchet website](http://vuejs.org/guide/).
+Documentation for ratchet can be found on the [Vue.js website](http://vuejs.org/guide/).
 
 ## Description
 
