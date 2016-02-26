@@ -38,7 +38,7 @@ It also hooks in Vue.js to master view renderings.
 
 6) On a terminal console navigate to project root run command "php artisan chat:serve" to start the chat server (localhost on port 9090)
 
-7) Whohaa! You'r done! Open browser and enter url http://chat.dev, login and happy chatting!
+7) Whohaa! You'r done! Open browser and enter url http://localhost:8000, login and happy chatting!
 
 ## Contributing
 
