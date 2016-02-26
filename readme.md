@@ -4,23 +4,25 @@
 
 "Ratchet is a loosely coupled PHP library providing developers with tools to create real time, bi-directional applications between clients and servers over WebSockets. This is not your Grandfather's Internet."
 
+"Vue.js is a library for building interactive web interfaces. It provides data-reactive components with a simple and flexible API"
+
 ## Official Documentation
 
 Documentation for Laravel 5 can be found on the [Laravel website](http://laravel.com/docs).
 
 Documentation for ratchet can be found on the [Ratchet website](http://socketo.me/docs/).
 
+Documentation for ratchet can be found on the [Ratchet website](http://vuejs.org/guide/).
+
 ## Description
 
 The idea is to integrate Ratchet web sockets with a Laravel 5 simple application and implement a chat that uses web sockets.
 
-This repo also showcases how to do the whole cicle for social authentication with laravel 5 (which is kind of a neat feature). I only used facebook login as example, but it's quite easy to add new authentication methods.
+It also hooks in Vue.js to master view renderings.
 
 ## Requirements
 
 1) [Composer](https://getcomposer.org/)
-
-2) Database server (I use mysql)
 
 ## Setup guide
 	
@@ -32,19 +34,11 @@ This repo also showcases how to do the whole cicle for social authentication wit
 
 4) If you want to test facebook login with your own app, go to config/services.php and change the facebook credentials and use your own.
 
-5) Add a virtual host with ServerName "chat.dev" (or use whatever server name you like). This steps has more steps within, so please search on google how to add a virtual host.
+5) On a terminal console navigate to project root run command "php artisan:serve" to instance a new php server.
 
-6) On a terminal console navigate to project root run command "chmod -R 777 storage" 
+6) On a terminal console navigate to project root run command "php artisan chat:serve" to start the chat server (localhost on port 9090)
 
-7) Rename .env.example file (located at root structure) to be .env only and update your database credentials. (Note that a database server is needed to run this app)
-
-8) On a terminal console navigate to project root run command "php artisan migrate:install"
-
-9) On a terminal console navigate to project root run command "php artisan migrate"
-
-10) On a terminal console navigate to project root run command "php artisan chat:serve" to start the chat server (localhost on port 9090)
-
-11) Whohaa! You'r done! Open browser and enter url http://chat.dev, login and happy chatting!
+7) Whohaa! You'r done! Open browser and enter url http://chat.dev, login and happy chatting!
 
 ## Contributing
 
