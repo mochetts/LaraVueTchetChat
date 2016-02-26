@@ -20,9 +20,13 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
+		$swID = rand(1, 87);
+		$swChar = json_decode(file_get_contents('https://swapi.co/api/people/'.$swID.'/'));
+		$userName = $swChar->name;
+
 		$chatPort = \Request::input("p");
 		$chatPort = $chatPort ?: 9090;
-		return view('home', compact("chatPort"));
+		return view('home', compact("chatPort", "userName"));
 	}
 
 }

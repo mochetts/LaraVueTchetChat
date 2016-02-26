@@ -11,10 +11,10 @@
 </style>
 
 <div class="container">
-	
+
 	<div class="row">
 
-		<div class="col-md-10 col-md-offset-1">
+		<div>
 			
 			<div class="panel panel-default">
 				
@@ -58,6 +58,16 @@
 			</div>
 		</div>
 	</div>
+
+	<h3> Important note </h3>
+	<p>
+		This is a demo application to showcase how to integrate Laravel PHP, Ratchetphp (Web sockets) and Vue.js. 
+		You can find the code of this demo application under this <br><a href="https://github.com/mmochetti/LaraVueTchetChat" target="_blank">Github repository</a>
+	</p>
+
+	<p>
+		Enjoy! <br>Martin.
+	</p>
 </div>
 
 <!-- Latest Vue JS CDN -->
@@ -70,7 +80,7 @@
 		data : {
 			messages: [],
 			newMessage: "",
-			userName: "{{ md5(session()->get('id')) }}",
+			userName: "{{ $userName }}",
 			port: "{{ $chatPort }}",
 			uri: "{{ explode(':', str_replace('http://', '', str_replace('https://', '', App::make('url')->to('/'))))[0] }}",
 			conn: false,
