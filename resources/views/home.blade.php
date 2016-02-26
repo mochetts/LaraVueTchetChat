@@ -31,6 +31,7 @@
 						<input style="display:table-cell; width: 100%;"
 							   type="text" 
 							   v-model="userName"
+							   @click="focusMe"
 						/>
 					</div>
 
@@ -69,7 +70,7 @@
 		data : {
 			messages: [],
 			newMessage: "",
-			userName: "John Doe",
+			userName: "{{ md5(session()->get('id')) }}",
 			port: "{{ $chatPort }}",
 			uri: "{{ explode(':', str_replace('http://', '', str_replace('https://', '', App::make('url')->to('/'))))[0] }}",
 			conn: false,
@@ -134,7 +135,8 @@
 
 			this.conn.onopen = function(event) {
 			    me.addSystemMessage("Connection established! Be cool...");
-			};
+			    this.conn.send(this.userName+":Hi! I'm now connected");
+			}.bind(this);
 
 			this.conn.onmessage = function(event) {
 			  	me.addServerMessage(event.data);
@@ -187,7 +189,10 @@
 				this.addMeAmessage(this.newMessage);
 
 				this.newMessage = "";
-			} 
+			},
+			focusMe : function(event) {
+				event.target.select();
+			}	
 		}
 	});
 </script>
