@@ -32,13 +32,11 @@ It also hooks in Vue.js to master view renderings.
 
 3) Standing on repo folder, run "composer update" from a terminal
 
-4) If you want to test facebook login with your own app, go to config/services.php and change the facebook credentials and use your own.
+4) On a terminal console navigate to project root run command "php artisan:serve" to instance a new php server.
 
-5) On a terminal console navigate to project root run command "php artisan:serve" to instance a new php server.
+5) On a terminal console navigate to project root run command "php artisan chat:serve" to start the chat server (localhost on port 9090)
 
-6) On a terminal console navigate to project root run command "php artisan chat:serve" to start the chat server (localhost on port 9090)
-
-7) Whohaa! You'r done! Open browser and enter url http://localhost:8000, login and happy chatting!
+6) Whohaa! You'r done! Open browser and enter url http://localhost:8000, login and happy chatting!
 
 ## Contributing
 
